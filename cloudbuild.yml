@@ -3,3 +3,6 @@ steps:
   args: ['install']
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'test']
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/container-build-test/node-unit-tests', '.']
+images: ['gcr.io/container-build-test/node-unit-tests']
