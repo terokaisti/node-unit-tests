@@ -26,7 +26,7 @@ describe('server', function() {
             if (err) { return done(err); }
             
             assert.equal(res.status, 200);
-            assert.equal(res.text, '<h1>Hello World!</h1>');
+            assert.equal(res.text, '<h1>Hello World</h1>');
             done();
         });
         
