@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: gcr.io/kube-test-22012/node-unit-tests:latest
+          image: eu.gcr.io/kube-test-22012/node-unit-tests:latest
           ports:
             - containerPort: 8080
           # The following environment variables will contain the database host,
