@@ -46,4 +46,18 @@ describe('server', function() {
         });
         
     });
+
+    it('should return a something at /sum?a=1&b=1', function( done ) {
+        
+        superagent.get('http://localhost:4000/sum?a=1&b=1').end(function(err, res) {
+            if (err) { return done(err); }
+            
+            assert.equal(res.status, 200);
+            assert.equal(res.text, '2');
+            done();
+        });
+        
+    });
+
+
 });

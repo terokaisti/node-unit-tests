@@ -1,19 +1,21 @@
 {
-  "name": "unit-tests",
+  "name": "db-unit-tests",
   "version": "0.1.0",
   "private": true,
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
     "start": "node app/server.js",
+    "dbtest": "node app/db.js",
     "test": "./node_modules/mocha/bin/mocha test/"
   },
-  "author": "Jordan Kasper",
+  "author": "Tero Kaisti",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.3",
     "sinon": "^1.17.2",
-    "superagent": "^1.4.0"
+    "superagent": "^1.4.0",
+    "pg": "^7.4.1"
   }
 }
